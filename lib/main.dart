@@ -28,12 +28,20 @@ class SimpleProject extends StatelessWidget {
       appBar: AppBar(
         //action_button
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.access_time_filled)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.account_box)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.access_time_filled),
+            color: Colors.blue,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.account_box),
+            color: Colors.blue,
+          ),
         ],
         elevation: 12,
         backgroundColor: Colors.amberAccent,
-        title: Text("School APP"),
+        title: Text("School APP", style: TextStyle(color: Colors.blue)),
         centerTitle: true,
         //leading_button
         leading: IconButton(
@@ -43,8 +51,19 @@ class SimpleProject extends StatelessWidget {
           iconSize: 30,
         ),
       ),
-      body: Center(
-        child: Text("Hello Flutter", style: TextStyle(fontSize: 40)),
+      body: Text(
+        "A future-ready School Management System designed to digitalize education, strengthen communication, and improve learning efficiency through modern technology and smart features.",
+        style: TextStyle(
+          fontSize: 20,
+          fontStyle: FontStyle.italic,
+          color: const Color.fromARGB(255, 16, 97, 97),
+          fontWeight: FontWeight.bold,
+          height: 1,
+          letterSpacing: 1,
+        ),
+
+        maxLines: 2,
+        overflow: TextOverflow.fade,
       ),
     );
   }
