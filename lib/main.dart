@@ -43,7 +43,9 @@ class SimpleProject extends StatelessWidget {
           iconSize: 30,
         ),
       ),
-      body: Text("Hello Flutter", style: TextStyle(fontSize: 40)),
+      body: Center(
+        child: Text("Hello Flutter", style: TextStyle(fontSize: 40)),
+      ),
     );
   }
 }
