@@ -48,22 +48,97 @@ class SimpleProject extends StatelessWidget {
           onPressed: () {},
           icon: Icon(Icons.abc_outlined),
           color: Colors.blue,
-          iconSize: 30,
+          iconSize: 40,
         ),
       ),
-      body: Text(
-        "A future-ready School Management System designed to digitalize education, strengthen communication, and improve learning efficiency through modern technology and smart features.",
-        style: TextStyle(
-          fontSize: 20,
-          fontStyle: FontStyle.italic,
-          color: const Color.fromARGB(255, 16, 97, 97),
-          fontWeight: FontWeight.bold,
-          height: 1,
-          letterSpacing: 1,
-        ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.all(15),
+              alignment: Alignment.center,
+              width: 380,
+              height: 400,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                border: Border.all(width: 2, color: Colors.lightBlue),
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+              ),
+              child: Text(
+                "Mohammad",
+                style: TextStyle(fontSize: 20, color: Colors.amberAccent),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(15),
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(width: 2, color: Colors.lightBlue),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                    ),
+                    child: Text(
+                      "Mohammad",
+                      style: TextStyle(fontSize: 20, color: Colors.amberAccent),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(15),
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(width: 2, color: Colors.lightBlue),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                    ),
+                    child: Text(
+                      "Love",
+                      style: TextStyle(fontSize: 20, color: Colors.amberAccent),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(15),
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(width: 2, color: Colors.lightBlue),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                    ),
+                    child: Text(
+                      "You",
+                      style: TextStyle(fontSize: 20, color: Colors.amberAccent),
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
-        maxLines: 2,
-        overflow: TextOverflow.fade,
+            Container(
+              margin: EdgeInsets.all(15),
+              alignment: Alignment.center,
+              width: 380,
+              height: 400,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                border: Border.all(width: 2, color: Colors.lightBlue),
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+              ),
+              child: Text(
+                "Mohammad",
+                style: TextStyle(fontSize: 20, color: Colors.amberAccent),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
